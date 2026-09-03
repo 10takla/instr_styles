@@ -1,0 +1,37 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Integrate Drafts (Watch)",
+      "type": "process",
+      "command": "node",
+      "args": [
+        "${workspaceFolder}/../ai_drafts/ai_artifacts/integrate.js",
+        "${workspaceFolder}/ai_instrs/Сборка пака/ai_artifacts/drafts_en",
+        "${workspaceFolder}/ai_instrs/Сборка пака/ai_artifacts/integrated",
+        "--watch"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "isBackground": true,
+      "problemMatcher": {
+        "pattern": {
+          "regexp": "^$"
+        },
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": "^\\[\\+\\]",
+          "endsPattern": "^\\[👁️\\]"
+        }
+      },
+      "runOptions": {
+        "runOn": "folderOpen"
+      },
+      "presentation": {
+        "reveal": "silent",
+        "panel": "dedicated"
+      }
+    }
+  ]
+}
