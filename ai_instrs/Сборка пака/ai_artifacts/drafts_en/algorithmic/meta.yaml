@@ -1,0 +1,3 @@
+description: Describes an executor-independent algorithm that transforms inputs into a result. Use when documenting algorithms.
+conditions:
+  - explicit_invocation

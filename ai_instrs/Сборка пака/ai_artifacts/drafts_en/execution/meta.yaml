@@ -1,0 +1,3 @@
+description: Presents task execution as a sequence of actions. Use for step-by-step instructions addressed to an agent.
+conditions:
+  - explicit_invocation

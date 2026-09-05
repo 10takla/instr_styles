@@ -1,0 +1,3 @@
+description: Defines shared rules for styles, notation, and content models. Apply when creating or revising instructions.
+conditions:
+  - implicit_invocation

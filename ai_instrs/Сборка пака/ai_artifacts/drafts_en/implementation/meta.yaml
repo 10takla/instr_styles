@@ -1,0 +1,3 @@
+description: Focuses an instruction on creating or modifying a concrete result. Use for implementation tasks.
+conditions:
+  - explicit_invocation

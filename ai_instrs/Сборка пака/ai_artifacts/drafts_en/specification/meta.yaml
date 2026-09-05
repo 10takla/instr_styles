@@ -1,0 +1,3 @@
+description: Defines a required result, its properties, and its format without unnecessary prescriptions. Use for result specifications.
+conditions:
+  - explicit_invocation

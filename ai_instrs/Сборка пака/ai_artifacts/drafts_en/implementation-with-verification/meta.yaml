@@ -1,0 +1,3 @@
+description: Separates implementation instructions from verification. Use for implementation tasks that require result verification.
+conditions:
+  - explicit_invocation
