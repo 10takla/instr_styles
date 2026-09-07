@@ -1,6 +1,6 @@
 ---
 name: "instr-styles-style-context"
-description: "Defines shared rules for styles, notation, and content models. Apply when creating or revising instructions."
+description: "Defines shared rules for styles and content models. Apply when creating or revising instructions."
 trigger: "model_decision"
 ---
 
@@ -13,36 +13,7 @@ Interpret technical format descriptions declaratively: recover the meaning they 
 - When choosing a structure, treat the style as a soft preference with an approximate weight of 20–30% relative to the task requirements and the decision already made.
 - When a user-edited version conflicts with the style, prioritize the user-edited version and apply the style only minimally.
 - Follow the common structure of an instruction, a stage, and a content model.
-- Apply the rules for notation, stages, content, and styles consistently.
-
-## Notation
-
-### Interpolation
-
-- Interpret `<expression>` as the interpolation of the value, structure, or content defined by the expression.
-- Determine how to interpolate an expression from its content and the format context.
-- Do not output angle brackets literally.
-- Treat `var` as the name of a variable or parameter.
-- Interpret `` `<var>` `` as the interpolation of the value of `var`; do not include the backticks in the result.
-
-Examples:
-
-- `<###>` — insert a Markdown heading at the required nesting level: `#`, `##`, `###`, and so on.
-- `<Section "Inputs">` — insert a section with the specified name.
-
-### Descriptive text
-
-- Interpret `[description]` as a placeholder for free-form text generated according to the description.
-- Do not output square brackets literally.
-
-### Quantifiers and repetition
-
-- Interpret `...` as one or more repetitions of the preceding element.
-- Do not output `...` literally in the resulting document.
-
-### Passing parameters
-
-Interpret `, where: var = <value>` as passing a value to the `var` parameter of the interpolated structure.
+- Apply the rules for stages, content, and styles consistently.
 
 ## Stage content
 

@@ -51,7 +51,7 @@ Form section content according to the specified types.
 
 ### Section kinds
 
-- **“Inputs”** — `List`, where each item has the format `` `<input name>` — <input description> ``. List values, files, links, and additional context available to the agent before the task begins and required to perform it.
+- **“Inputs”** — `List`, where each item has the format `` `<input name>` — <input description> ``. List values, files, links, and additional context that the calling instruction or operator explicitly passes on every invocation. Do not include the instruction content’s internal arguments. Interpret and, when needed, transform a passed value according to the argument description.
 - **“Task”** — `Text`. Briefly describe the required action or transformation.
 - **“Instructions”** — `TextOrList`. Describe a sequence of actions addressed to the agent for performing the task in the current context. Order the actions by dependency: each subsequent action assumes that the necessary preceding actions have been completed or that the state they require is available.
 - **“Algorithm”** — `List`. Describe a sequence of logical operations independent of a particular executor that transforms the input state into the result. Order the items by the execution order of the operations.
